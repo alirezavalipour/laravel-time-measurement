@@ -2,19 +2,19 @@
 
 this package use for measuring execution time of your operation, it's  event based
 
-#### install
+#### Install
 ```bash
 composer require alirezavalipour/laravel-time-measurement
 ```
-##### publish config file 
+##### Publish config file and migration
 ```bash
 php artisan vendor:publish 
 ```
-#### migration
+#### Migration
 ```bash
 php artisan migrate
 ```
-#### usage
+#### Usage
 
 ```php
 
@@ -27,7 +27,10 @@ event(new LatencyStartEvent);
 event(new LatencyFinishEvent( "source of operation for exampel user create controller" , "#tag1#tag2"));
 
 ```
+### Note
+you should always call  ``` LatencyStartEvent ``` first then call ``` LatencyFinishEvent ```
 
+After calling ``` LatencyStartEvent ``` then ``` LatencyFinishEvent ``` you would have a log in database or whatever impelemented by ``` LogOperation ``` interface.
 
 
 ## License
