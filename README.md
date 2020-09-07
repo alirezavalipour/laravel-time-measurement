@@ -24,13 +24,12 @@ event(new LatencyStartEvent);
   some heavy operation
 **/
 
-event(new LatencyFinishEvent( "source of operation for exampel user create controller" , "#tag1#tag2"));
+event(new LatencyFinishEvent( "source of operation for example  Userscontroller@create" , "#tag1#tag2"));
 
 ```
 ### Note
-you should always call  ``` LatencyStartEvent ``` first then call ``` LatencyFinishEvent ```
-
-After calling ``` LatencyStartEvent ``` then ``` LatencyFinishEvent ``` you would have a log in database or whatever impelemented by ``` LogOperation ``` interface.
+1. You should always call  ``` LatencyStartEvent ``` first then call ``` LatencyFinishEvent ```
+2. After calling ``` LatencyStartEvent ``` then ``` LatencyFinishEvent ``` you would have a log in database or whatever impelemented by ``` LogOperation ``` interface.
 
 
 ## License
