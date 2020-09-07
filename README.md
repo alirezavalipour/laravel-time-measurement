@@ -1,6 +1,6 @@
 # laravel-time-measurement
 
-this package use for measuring execution time of your operation, it's  event based
+This package use for measuring execution time of operation. it's event based
 
 #### Install
 ```bash
