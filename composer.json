@@ -1,0 +1,17 @@
+{
+    "name": "alirezavalipour/laravel-time-measurement",
+    "description": "this package use for measuring execution time of your operation, it's  event based",
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Lantency\\LatencyServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Lantency\\": "src/"
+        }
+    }
+}
